@@ -23,10 +23,20 @@
     </dependency>
   </dependencies>
   <modules>
-  	<module>GestionarReserva</module>
-  	<module>GestionarMesa</module>
-  	<module>GestionarCocina</module>
-  	<module>NotificarProductos</module>
-  	<module>GestionarEstadisticas</module>
+  	<module>Iteracion1</module>
+  	<module>Iteracion2</module>
+  	<module>Iteracion3</module>
+  	<module>Iteracion4</module>
+  	<module>Iteracion5</module>
+  	<module>Iteracion6</module>
+  	<module>Iteracion7</module>
+  	<module>Iteracion8</module>
+  	<module>Iteracion9</module>
+  	<module>Iteracion10</module>
+  	<module>Iteracion11</module>
+  	<module>Iteracion12</module>
+  	<module>Iteracion13</module>
+  	<module>Iteracion14</module>
+  	<module>Iteracion15</module>
   </modules>
 </project>
