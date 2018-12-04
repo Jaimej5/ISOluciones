@@ -10,7 +10,8 @@ public class Reserva {
 	private int ID;
 	private String NombreReserva;
 	private Date fecha;
-	private String Turnos;
+	private Horario horario;
+	private Turno Turnos;
 
 	public Mesa getMesa() {
 		// TODO - implement Reserva.getMesa
@@ -68,12 +69,13 @@ public class Reserva {
 		throw new UnsupportedOperationException();
 	}
 
-	public Reserva(Mesa Mesa, int ID,String NombreReserva,Date fecha,String turno) {
+	public Reserva(Mesa Mesa, int ID,String NombreReserva,Date fecha,Horario horario ,Turno turno) {
 		this.Mesa=Mesa;
 		this.ID=ID;
 		this.NombreReserva=NombreReserva;
 		this.fecha=fecha;
-		this.Turnos=turno;
+		this.horario=horario;
+		this.Turnos= turno;
 		
 		
 		
