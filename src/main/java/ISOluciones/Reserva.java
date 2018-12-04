@@ -81,7 +81,7 @@ public class Reserva {
 		
 	}
 	public String toString() {
-		return "ID Reserva  "+ID+" Mesa = " + Mesa.getID()  + ", NombreReserva=" + NombreReserva + ", Fecha Reserva =" + fecha+"	turno: 	 "+Turnos;
+		return "ID Reserva:  "+ID+" Mesa: " + Mesa.getID()  + ", Reserva a nombre de: " + NombreReserva + ", Fecha: " + fecha+"	Turno: "+Turnos;
 	}
 
 }

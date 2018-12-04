@@ -28,8 +28,12 @@ public class GestorMesa {
 		
 		Mesa mesa=elegirMesa(Disponibles(listaMesas));
 		Date fecha= new Date();
-		System.out.println("introduce turno: ");
+		System.out.println("introduce turno (comida o cena):");
 		String turno=sc.next();
+		while(!turno.equals("comida") && !turno.equals("cena")) {
+			System.out.println("Turno incorrecto, vuelva a introducirlo");
+			turno=sc.next();
+		}
 		Reserva Rv=new Reserva(mesa,ID,Nombre,fecha,turno);
 				
 				
@@ -81,10 +85,8 @@ public class GestorMesa {
 		int count=-1;
 		System.out.println("Las mesas disponibles son : ");
 		for (Mesa mesa : Libres) {
-			count++;
-			
-			
-			System.out.println("opcion : "+count+"	Nº comensales : "+mesa.getNComensales());
+			count++;			
+			System.out.println("Mesa "+count+"	=> Nº comensales : "+mesa.getNComensales());
 		}
 		Scanner sc =new Scanner(System.in);
 		System.out.println("seleciona mesa : ");
