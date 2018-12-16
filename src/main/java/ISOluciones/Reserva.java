@@ -76,14 +76,10 @@ public class Reserva {
 		this.fecha=fecha;
 		this.horario=horario;
 		this.Turnos= turno;
-		
-		
-		
 		// TODO - implement Reserva.Reserva
-		
 	}
 	public String toString() {
-		return "ID Reserva:  "+ID+" Mesa: " + Mesa.getID()  + ", Reserva a nombre de: " + NombreReserva + ", Fecha: " + fecha+"	Turno: "+Turnos;
+		return "ID Reserva:  "+ID+" Mesa: " + Mesa.getID()  + ", Reserva a nombre de: " + NombreReserva + ", Fecha: " + fecha+", Horario: "+horario+"	Turno: "+Turnos;
 	}
 
 }

@@ -6,6 +6,7 @@ import java.util.Scanner;
 import ISOluciones.Estado;
 import ISOluciones.Mesa;
 import ISOluciones.Reserva;
+import ISOluciones.Turno;
 public class GestorMesa {
 
 	private ArrayList<Reserva> reservas = new ArrayList<Reserva>();
@@ -18,27 +19,18 @@ public class GestorMesa {
 	 
 	public void HacerReserva() {
 		// TODO - implement GestorMesa.HacerReserva
-		
-
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Introduce nombre de reserva:");
 		String Nombre =sc.next();
 		int ID=Nreservas();
-		
-		
 		Mesa mesa=elegirMesa(Disponibles(listaMesas));
 		Date fecha= new Date();
-		System.out.println("introduce turno (comida o cena):");
-		String turno=sc.next();
-		while(!turno.equals("comida") && !turno.equals("cena")) {
-			System.out.println("Turno incorrecto, vuelva a introducirlo");
-			turno=sc.next();
-		}
-		Reserva Rv=new Reserva(mesa,ID,Nombre,fecha,turno);
-				
-				
-		reservas.add(Rv);
+		System.out.println("Elija el horario de la reserva");
+		Horario horario=Horario.COMIDA;
+		Turno turno =Turno.TURNO1;
 		
+		Reserva Rv=new Reserva(mesa,ID,Nombre,fecha, horario, turno);
+		reservas.add(Rv);
 	}
 
 	public void AsignarMesa() {
