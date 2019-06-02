@@ -1,11 +1,11 @@
 package ISOluciones.PrMantenimiento;
 
-import ISOluciones.PrMantenimiento.Mesa;
-
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import ISOluciones.PrTesting.Mesa;
 
 public class MesaTest {
 

@@ -1,4 +1,4 @@
-package ISOluciones.PrMantenimiento;
+package ISOluciones.PrTesting;
 
 /**
  * Hello world!

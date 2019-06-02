@@ -1,4 +1,4 @@
-package ISOluciones.PrMantenimiento;
+package ISOluciones.PrTesting;
 
 public class Camarero extends Usuario {
 }
